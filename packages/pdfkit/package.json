@@ -1,5 +1,5 @@
 {
-  "name": "@react-pdf/pdfkit",
+  "name": "@darpanio/react-pdf-pdfkit",
   "version": "3.1.6",
   "license": "MIT",
   "description": "A PDF generation library for Node.js",
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/diegomura/react-pdf.git",
+    "url": "https://github.com/DarpanIO/react-pdf.git",
     "directory": "packages/pdfkit"
   },
   "author": {

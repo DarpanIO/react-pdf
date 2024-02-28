@@ -1907,6 +1907,53 @@
     unbzip2-stream "1.4.3"
     yargs "17.7.2"
 
+"@react-pdf/pdfkit@^3.1.6":
+  version "3.1.6"
+  resolved "https://registry.yarnpkg.com/@react-pdf/pdfkit/-/pdfkit-3.1.6.tgz#ab9cfd6734917c0185c307be766a2f61c2995bb0"
+  integrity sha512-U96VVhphniDBsLbmeJHgEml15nng8cr90mmEfPATh98gsqg6wev0avBr4k9XPjLdaN1f2xTXD4VdlaMYJZ+n7Q==
+  dependencies:
+    "@babel/runtime" "^7.20.13"
+    "@react-pdf/png-js" "^2.3.1"
+    browserify-zlib "^0.2.0"
+    crypto-js "^4.2.0"
+    fontkit "^2.0.2"
+    jay-peg "^1.0.0"
+    vite-compatible-readable-stream "^3.6.1"
+
+"@react-pdf/render@^3.4.3":
+  version "3.4.3"
+  resolved "https://registry.yarnpkg.com/@react-pdf/render/-/render-3.4.3.tgz#1aefea3b130349a6916fecfc229d0196d55f9305"
+  integrity sha512-9LL059vfwrK1gA0uIA4utpQ/pUH9EW/yia4bb7pCoARs8IlupY5UP265jgax15ua0p+MdUwShZzQ9rilu7kGsw==
+  dependencies:
+    "@babel/runtime" "^7.20.13"
+    "@react-pdf/fns" "2.2.1"
+    "@react-pdf/primitives" "^3.1.1"
+    "@react-pdf/textkit" "^4.4.1"
+    "@react-pdf/types" "^2.4.1"
+    abs-svg-path "^0.1.1"
+    color-string "^1.9.1"
+    normalize-svg-path "^1.1.0"
+    parse-svg-path "^0.1.2"
+    svg-arc-to-cubic-bezier "^3.2.0"
+
+"@react-pdf/renderer@^3.3.7", "@react-pdf/renderer@^3.3.8":
+  version "3.3.8"
+  resolved "https://registry.yarnpkg.com/@react-pdf/renderer/-/renderer-3.3.8.tgz#8574bb61e2b77a074587c070d46b4b4e8564bb7d"
+  integrity sha512-wJESEZCNNbog4MxDjRgKtgdmyGm+lDce9cMX2THRs1Jltckq3M8N0yt/fkvGyB8nwiDPtEBOsz9JKlw5vLidbw==
+  dependencies:
+    "@babel/runtime" "^7.20.13"
+    "@react-pdf/font" "^2.4.4"
+    "@react-pdf/layout" "^3.11.2"
+    "@react-pdf/pdfkit" "^3.1.6"
+    "@react-pdf/primitives" "^3.1.1"
+    "@react-pdf/render" "^3.4.3"
+    "@react-pdf/types" "^2.4.1"
+    events "^3.3.0"
+    object-assign "^4.1.1"
+    prop-types "^15.6.2"
+    queue "^6.0.1"
+    scheduler "^0.17.0"
+
 "@rollup/plugin-alias@^5.1.0":
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/@rollup/plugin-alias/-/plugin-alias-5.1.0.tgz#99a94accc4ff9a3483be5baeedd5d7da3b597e93"
@@ -5943,7 +5990,7 @@ jake@^10.8.5:
     filelist "^1.0.4"
     minimatch "^3.1.2"
 
-jay-peg@^1.0.1:
+jay-peg@^1.0.0, jay-peg@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/jay-peg/-/jay-peg-1.0.1.tgz#f09b8615886cb1ce61c364c16e203f566eeaa779"
   integrity sha512-zBfjkGbuuNXk8JW+rEePpPEbRRjupS8q+5yPak7kjy3e2GvvNwsLle9okEFvfGyZA6HvtSSiYrVd1/jgnYebaQ==

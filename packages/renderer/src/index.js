@@ -1,6 +1,6 @@
 import FontStore from '@react-pdf/font';
 import renderPDF from '@react-pdf/render';
-import PDFDocument from '@react-pdf/pdfkit';
+import PDFDocument from '@darpanio/react-pdf-pdfkit';
 import layoutDocument from '@react-pdf/layout';
 
 import createRenderer from './renderer';
@@ -66,7 +66,7 @@ const pdf = (initialValue) => {
     return new Promise((resolve, reject) => {
       instance.on('data', (chunk) => {
         chunks.push(
-          chunk instanceof Uint8Array ? chunk : new Uint8Array(chunk),
+          chunk instanceof Uint8Array ? chunk : new Uint8Array(chunk)
         );
       });
 
@@ -84,11 +84,8 @@ const pdf = (initialValue) => {
 
   // TODO: rename this method to `toStream` in next major release, because it return stream not a buffer
   const toBuffer = async () => {
-    const {
-      layout: _INTERNAL__LAYOUT__DATA_,
-      fileStream,
-    } = await render();
-    callOnRender({_INTERNAL__LAYOUT__DATA_});
+    const { layout: _INTERNAL__LAYOUT__DATA_, fileStream } = await render();
+    callOnRender({ _INTERNAL__LAYOUT__DATA_ });
 
     return fileStream;
   };
@@ -102,7 +99,7 @@ const pdf = (initialValue) => {
   const toString = async () => {
     if (process.env.NODE_ENV === 'development') {
       console.warn(
-        '`toString` is deprecated and will be removed in next major release',
+        '`toString` is deprecated and will be removed in next major release'
       );
     }
 
